@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+}
+nav{
+    padding: 15px;
+    background-color: #050227;
+    color: white;
+}
+nav li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 3%;
+    cursor: pointer;
+}
+main{
+    background-image: linear-gradient(to Right,#b4e2eb,white,#b4e2eb,white);
+}
+.about{
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10%;
+}
+.about .text{
+    width: 60%;
+}
+.about .text h1{
+    color: #050227;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.about .text p{
+    color: rgb(96, 96, 97);
+    width: 80%;
+    line-height: 2.2rem;
+}
+.about img{
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 9px #76757a;
+}
+.contact{
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 40%;
+}
+.contact a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact i{
+    color: black;
+}
+@media only screen and (max-width: 400px) {
+    body{
+        flex-direction: column;
+        text-align: center;
+    }
+    main{
+        background-image: linear-gradient(#b4e2eb,white,#b4e2eb,white);
+    }
+    nav{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    nav li{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .about{
+        padding: 50px 10%;
+        flex-direction: column-reverse;
+        grid-gap: 0;
+    }
+    .about .text{
+        width: 90%;
+    }
+    .about .text h1{
+        font-size: 40px;
+    }
+    .about .text p{
+        width: 100%;
+    }
+    .contact{
+        
+        padding-left: 15%;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto;
+    }
+    
+}
